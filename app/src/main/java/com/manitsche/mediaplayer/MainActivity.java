@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         if (mediaPlayer.isPlaying()) {
             mediaPlayer.pause();
             int tempo = mediaPlayer.getDuration();
+            mediaPlayer.seekTo(tempo / 2);
         }
     }
 }
